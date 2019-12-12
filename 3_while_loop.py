@@ -2,16 +2,13 @@ import csv
 #---------------------------------------------------------------------
 # Read data
 
-def read_data()en('sales.csv', 'r') as sales_csv:
-        spreadsheet = csv.DictReader(sales_csv)
-for row in spreadsheet:
-    data.append(r
- ow)
-
-    return data:
-    data = []
-
-    with op
+def read_data():
+        data = []
+        with open ('sales.csv', 'r') as sales_csv:
+                spreadsheet = csv.DictReader(sales_csv)
+                for row in spreadsheet:
+                        data.append(row)
+        return data
 #---------------------------------------------------------------------
 # Total sales
 
